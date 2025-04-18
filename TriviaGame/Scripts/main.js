@@ -3,12 +3,13 @@
 // Get the file paths of our questions and answers
 const questionURL = './Data/questions.json';
 const answerURL = './Data/answers.json';
-const questionId = 16;
+const questionId = 19;
 
 // We'll store references to the buttons, correct answer, and correctness
 let buttons = [];
 let correctAnswer = '';
 let correct = '';
+let secondsLeft = 30;
 
 /**
  * Reads in the questions and answers from their respective files and assigns the answers to buttons on the game HMTL page
@@ -21,11 +22,17 @@ async function loadQuestionAndAnswers() {
         const questionText = qData.question[questionId - 1].questionText;
         const questionImageAddress = qData.question[questionId - 1].questionImageAddress;
         const questionDescription = qData.question[questionId - 1].questionDescription;
+        const questionTimer = qData.question[questionId - 1].questionTimer;
+
+        // Set the timer
+        secondsLeft = questionTimer;
 
         // Put it in the <h1 id="questionText">
         document.getElementById('questionText').textContent = questionText;
         document.getElementById('questionImage').src = questionImageAddress;
         document.getElementById('questionImage').alt = questionDescription;
+
+        
 
         // 2. Fetch answer JSON
         const aResponse = await fetch(answerURL);
@@ -42,6 +49,9 @@ async function loadQuestionAndAnswers() {
                 btn.textContent = answers[i];
             }
         }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
         
     } catch (err) {
         console.error('Error loading question or answers:', err);
@@ -82,7 +92,7 @@ async function checkAnswer(answerText) {
         correct = "Correct!";
         gameScore += 50;
     }
-    else if (answerText === "TIMER RAN OUT OF TIME!!!") {
+    else if (answerText === "No answer selected.") {
         correct = "You ran out of time!";
     }
     else
@@ -166,7 +176,6 @@ function setupNavigation() {
 }
 
 // Heres the modifiers for the timer, seconds is how long the timer is while timerDisplay is how the timer is displayed
-let secondsLeft = 5;
 const timerDisplay = document.getElementById("timer");
 
 /**
@@ -181,7 +190,7 @@ function updateTimer() {
     if (secondsLeft <= 0) {
         clearInterval(timer); // Stop the countdown
 
-        checkAnswer("TIMER RAN OUT OF TIME!!!");
+        checkAnswer("No answer selected.");
 
         window.location.href = "results.html";
         
@@ -189,9 +198,6 @@ function updateTimer() {
         secondsLeft--;
     }
 }
-
-updateTimer();
-setInterval(updateTimer, 1000);
 
 
 /**

@@ -5,133 +5,152 @@
 			"category": "ETSU",
 			"questionText": "What year was ETSU founded?",
 			"questionImageAddress": "https://www.etsu.edu/fachistory/pictures/gilbreath-arial-2_cropped.jpg",
-			"questionDescription": "Image of ETSU's campus."
+			"questionDescription": "Image of ETSU's campus.",
+			"questionTimer":  15
 		},
 		{
 			"questionID": "q2",
 			"category": "ETSU",
 			"questionText": "What was the previous name of the Brinkley Center?",
 			"questionImageAddress": "https://communitytectonics.com/wp-content/uploads/2019/08/IMG_5132-scaled.jpg",
-			"questionDescription": "Image inside the ETSU Brinkley Center."
+			"questionDescription": "Image inside the ETSU Brinkley Center.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q3",
 			"category": "ETSU",
 			"questionText": "What is the name of the building with the dining hall and Buc Mart?",
 			"questionImageAddress": "https://i0.wp.com/easttennessean.com/wp-content/uploads/2023/08/ETSU-Dining-Hall-ContributedETSU.jpg?fit=2000%2C1050&ssl=1",
-			"questionDescription": "Image of ETSU's dinning hall."
+			"questionDescription": "Image of ETSU's dinning hall.",
+			"questionTimer": 25
 		},
 		{
 			"questionID": "q4",
 			"category": "ETSU",
 			"questionText": "Where did the name Pepper's Grill come from?",
 			"questionImageAddress": "https://www.wjhl.com/wp-content/uploads/sites/98/2025/01/IMG_0195.jpg?strip=1&w=640",
-			"questionDescription": "Image of Pepper's Grill."
+			"questionDescription": "Image of Pepper's Grill.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q5",
 			"category": "ETSU",
 			"questionText": "What are our sports teams named?",
 			"questionImageAddress": "https://www.etsu.edu/esports/pictures/rocketleague/1-content-square.png",
-			"questionDescription": "Image of Landen_rl."
+			"questionDescription": "Image of Landen_rl.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q6",
 			"category": "Gaming",
 			"questionText": "When did the Nintendo GameCube come out in North America?",
 			"questionImageAddress": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaO6qZCyDzqiQ-DXar38TK9n2DvmQhBaoCZA&s",
-			"questionDescription": "Image of space."
+			"questionDescription": "Image of space.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q7",
 			"category": "Kinser",
 			"questionText": "What language was Kinser's first program made for money written in?",
 			"questionImageAddress": "https://miro.medium.com/v2/resize:fit:1400/0*kmYC7KFe-CgTAJ7A",
-			"questionDescription": "Image of random lines of code."
+			"questionDescription": "Image of random lines of code.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q8",
 			"category": "Kinser",
 			"questionText": "What company did Kinser land his first professional programmer job with?",
 			"questionImageAddress": "https://images.pexels.com/photos/2382848/pexels-photo-2382848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a plane."
+			"questionDescription": "Image of a plane.",
+			"questionTimer": 25
 		},
 		{
 			"questionID": "q9",
 			"category": "ETSU",
 			"questionText": "What game is played by ETSU Esports?",
 			"questionImageAddress": "https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of soccer."
+			"questionDescription": "Image of soccer.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q10",
 			"category": "Chemistry",
 			"questionText": "What is the boiling point of water?",
 			"questionImageAddress": "https://images.pexels.com/photos/6831122/pexels-photo-6831122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a pot on a portable stove."
+			"questionDescription": "Image of a pot on a portable stove.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q11",
 			"category": "Chemistry",
 			"questionText": "What type of bond is formed when electrons are shared between two atoms?",
 			"questionImageAddress": "https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a plasma globe."
+			"questionDescription": "Image of a plasma globe.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q12",
 			"category": "ETSU",
 			"questionText": "What is Ramsey's favorite Red Lobster food item?",
 			"questionImageAddress": "https://images.pexels.com/photos/8352391/pexels-photo-8352391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of lobsters."
+			"questionDescription": "Image of lobsters.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q13",
 			"category": "ETSU",
 			"questionText": "What was Ramsey's job before being a ETSU Professor?",
 			"questionImageAddress": "https://images.pexels.com/photos/28771663/pexels-photo-28771663/free-photo-of-cowboy-teddy-bear-with-punk-t-shirt-in-theme-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a sheriff bear."
+			"questionDescription": "Image of a sheriff bear.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q14",
 			"category": "Gaming",
 			"questionText": "What was the game of the year in 2015?",
 			"questionImageAddress": "https://images.pexels.com/photos/6301/fireworks-new-year-new-2015.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of sparklers spelling out 2015."
+			"questionDescription": "Image of sparklers spelling out 2015.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q15",
 			"category": "Gaming",
 			"questionText": "What is the best-selling game of all time? (By Copies Sold)",
 			"questionImageAddress": "https://images.pexels.com/photos/1340185/pexels-photo-1340185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a orange block."
+			"questionDescription": "Image of a orange block.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q16",
 			"category": "Gaming",
 			"questionText": "Who is the developer of Balatro?",
 			"questionImageAddress": "https://images.pexels.com/photos/6664193/pexels-photo-6664193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of cards spread out on a surface."
+			"questionDescription": "Image of cards spread out on a surface.",
+			"questionTimer": 15
 		},
 		{
 			"questionID": "q17",
 			"category": "Movies",
 			"questionText": "Who plays Professor Paul Hunham in The Holdovers (2023)?",
 			"questionImageAddress": "https://images.pexels.com/photos/625219/pexels-photo-625219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a chaulk board."
+			"questionDescription": "Image of a chaulk board.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q18",
 			"category": "Movies",
 			"questionText": "Who is the actor in the leading role of Sing Sing (2023)?",
 			"questionImageAddress": "https://images.pexels.com/photos/6064891/pexels-photo-6064891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a prison cell."
+			"questionDescription": "Image of a prison cell.",
+			"questionTimer": 20
 		},
 		{
 			"questionID": "q19",
 			"category": "Movies and TV",
 			"questionText": "Who is the director of Netflix shows The Haunting of Hill House, The Haunting of Bly Manor, Midnight Mass, and The Fall of the House of Usher?",
 			"questionImageAddress": "https://images.pexels.com/photos/10082743/pexels-photo-10082743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-			"questionDescription": "Image of a person with a white sheet over their head."
+			"questionDescription": "Image of a person with a white sheet over their head.",
+			"questionTimer": 20
 		}
 	]
 }
