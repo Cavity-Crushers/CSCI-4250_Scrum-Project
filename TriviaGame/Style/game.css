@@ -37,11 +37,22 @@
 }
 
 /**
+ * Styles the timer.
+ * 
+ * .class answer-button
+ */
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/**
  * Adds focus styling to selected answer buttons.
  * 
  * .class answer-button:focus
  */
-    .answer-button:focus {
-        outline: 3px solid #007BFF;
-        background-color: #e0f0ff;
-    }
+.answer-button:focus {
+    outline: 3px solid #007BFF;
+    background-color: #e0f0ff;
+}

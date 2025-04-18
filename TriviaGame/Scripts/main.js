@@ -82,6 +82,9 @@ async function checkAnswer(answerText) {
         correct = "Correct!";
         gameScore += 50;
     }
+    else if (answerText === "TIMER RAN OUT OF TIME!!!") {
+        correct = "You ran out of time!";
+    }
     else
     {
         correct = "Wrong!";
@@ -161,6 +164,34 @@ function setupNavigation() {
         }
     });
 }
+
+// Heres the modifiers for the timer, seconds is how long the timer is while timerDisplay is how the timer is displayed
+let secondsLeft = 5;
+const timerDisplay = document.getElementById("timer");
+
+/**
+ * Updates the timer every second.
+ */
+
+function updateTimer() {
+    const minutes = Math.floor(secondsLeft / 60);
+    const secs = secondsLeft % 60;
+    timerDisplay.textContent = `${minutes}:${secs.toString().padStart(2, '0')}`;
+
+    if (secondsLeft <= 0) {
+        clearInterval(timer); // Stop the countdown
+
+        checkAnswer("TIMER RAN OUT OF TIME!!!");
+
+        window.location.href = "results.html";
+        
+    } else {
+        secondsLeft--;
+    }
+}
+
+updateTimer();
+setInterval(updateTimer, 1000);
 
 
 /**
