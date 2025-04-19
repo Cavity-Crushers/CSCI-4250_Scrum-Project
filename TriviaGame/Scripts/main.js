@@ -161,7 +161,82 @@ function setupNavigation() {
         }
     });
 }
+// --------------------  PAUSE SYSTEM  --------------------
 
+/** Indicates whether game input is currently paused. */
+let isPaused = false;
+
+/*** 
+ * Shows the pause overlay and blocks answer navigation.
+ * @returns {void}
+ */
+function pauseGame() {
+    isPaused = true;
+    document.getElementById('pauseMenu').classList.remove('hidden');
+}
+
+/*** 
+ * Hides the pause overlay and re‑enables input.
+ * @returns {void}
+ */
+function resumeGame() {
+    isPaused = false;
+    document.getElementById('pauseMenu').classList.add('hidden');
+    // put focus back on first answer for keyboard users
+    if (buttons.length) buttons[0].focus();
+}
+
+/*** 
+ * Clears score/lives and starts from first question.
+ * @returns {void}
+ */
+function restartGame() {
+    localStorage.clear();                // wipe everything
+    window.location.href = './game.html';
+}
+
+/*** 
+ * Leaves the game and returns to home page.
+ * @returns {void}
+ */
+function quitGame() {
+    window.location.href = './index.html';
+}
+
+// Optional keyboard shortcut: press “P” to pause / resume
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'p') {
+        e.preventDefault();
+        isPaused ? resumeGame() : pauseGame();
+    }
+});
+
+// --------------------  NAVIGATION (update)  --------------------
+function setupNavigation() {
+    buttons = document.querySelectorAll('.answer-button');
+    if (!buttons.length) return;
+
+    let currentIndex = 0;
+    buttons[currentIndex].focus();
+
+    document.addEventListener('keydown', (event) => {
+        // Ignore key navigation while paused
+        if (isPaused) return;
+
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            currentIndex = (currentIndex + 1) % buttons.length;
+            buttons[currentIndex].focus();
+        } else if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            currentIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+            buttons[currentIndex].focus();
+        } else if (event.key === 'Enter') {
+            event.preventDefault();
+            buttons[currentIndex].click();
+        }
+    });
+}
 
 /**
  * Calls all of the functions that do not run on answer selection to initialize all variables

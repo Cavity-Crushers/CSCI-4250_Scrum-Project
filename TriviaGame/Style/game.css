@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Used to limit the game zone to a specific size and style for the game.
  * 
  * #ID GameZone
@@ -12,6 +12,71 @@
     background-color: lightblue;
     padding: 5px;
 }
+
+/*───────────────────────────────────────────────
+  PAUSE‑MENU SUPPORT
+───────────────────────────────────────────────*/
+
+/* 1.  Make #GameZone a positioning context so the ⏸ button
+      can sit in its top‑right corner. */
+#GameZone {
+    position: relative; /* new — keeps absolute children inside */
+}
+
+/* 2.  Pause button (⏸ icon) */
+#pauseBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0 0 0 /.25);
+}
+
+    #pauseBtn:hover {
+        background: #f0f0f0;
+    }
+
+/* 3.  Full‑screen overlay that appears when paused.
+      .hidden is toggled by JS to hide/show it. */
+.overlay {
+    position: fixed;
+    inset: 0; /* top:0 right:0 bottom:0 left:0 */
+    background: rgba(0 0 0 / 0.75); /* semi‑transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* above everything else */
+}
+
+.hidden {
+    display: none;
+}
+
+/* 4.  Center panel inside overlay */
+.overlay-content {
+    background: #e0e0e0;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+    .overlay-content h1 {
+        margin-top: 0;
+    }
+
+    .overlay-content button {
+        margin: .5rem;
+        padding: .5rem 1.25rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+
 
 /**
  * Used to change the styling of the question's image.
